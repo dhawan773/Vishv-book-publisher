@@ -18,3 +18,10 @@ document.querySelectorAll(".sidebar a").forEach(a=>{
     a.classList.add("active");
   });
 });
+function showStrikeStatus(){
+  alert(
+    "Vishv Book Publication\n\n" +
+    "Status: Strike Off\n\n" +
+    "This is a website status display only."
+  );
+}
