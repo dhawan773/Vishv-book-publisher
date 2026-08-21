@@ -38,3 +38,18 @@ function toggleStatus(){
     badge.classList.add("danger");
   }
 }
+function showStrikeStatus() {
+  const status = document.getElementById("companyStatus");
+
+  if (!status) return;
+
+  if (status.textContent.trim() === "Strike Off") {
+    status.textContent = "Active";
+    status.classList.remove("red");
+    status.classList.add("active-status");
+  } else {
+    status.textContent = "Strike Off";
+    status.classList.remove("active-status");
+    status.classList.add("red");
+  }
+}
