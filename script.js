@@ -102,3 +102,6 @@ function sendApplicationToWhatsApp(){
 
   window.open(whatsappURL, "_blank");
 }
+function openApplyForm() {
+  alert("Apply Now clicked");
+}
