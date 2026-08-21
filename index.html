@@ -215,7 +215,37 @@
       <div>© <span id="year"></span> CompanyInfo</div>
     </div>
   </footer>
+<!-- Application Form -->
+<div id="applicationForm" class="application-overlay">
+  <div class="application-form">
 
+    <button class="form-close" onclick="closeApplicationForm()">×</button>
+
+    <h2>Apply Now ✅</h2>
+    <p>Send Me An Address This Format.</p>
+
+    <input id="appName" type="text" placeholder="Full Name" required>
+
+    <input id="appMobile" type="tel" placeholder="Mobile No." required>
+
+    <input id="appHouse" type="text" placeholder="House No." required>
+
+    <input id="appArea" type="text" placeholder="Area Name" required>
+
+    <input id="appCity" type="text" placeholder="City" required>
+
+    <input id="appDistrict" type="text" placeholder="District" required>
+
+    <input id="appPin" type="text" inputmode="numeric" placeholder="Pin Code No." required>
+
+    <input id="appState" type="text" placeholder="State" required>
+
+    <button class="submit-application" onclick="sendApplicationToWhatsApp()">
+      Submit & Send on WhatsApp
+    </button>
+
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
