@@ -93,3 +93,7 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
   border-color:#22c55e;
   color:#dcfce7;
 }
+.active-status {
+  color: #16a34a !important;
+  font-weight: 800;
+}
