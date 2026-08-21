@@ -53,3 +53,52 @@ function showStrikeStatus() {
     status.classList.add("red");
   }
 }
+function openApplicationForm(){
+  const form = document.getElementById("applicationForm");
+
+  if(form){
+    form.style.display = "flex";
+  }
+}
+
+function closeApplicationForm(){
+  const form = document.getElementById("applicationForm");
+
+  if(form){
+    form.style.display = "none";
+  }
+}
+
+function sendApplicationToWhatsApp(){
+  const name = document.getElementById("appName").value.trim();
+  const mobile = document.getElementById("appMobile").value.trim();
+  const house = document.getElementById("appHouse").value.trim();
+  const area = document.getElementById("appArea").value.trim();
+  const city = document.getElementById("appCity").value.trim();
+  const district = document.getElementById("appDistrict").value.trim();
+  const pin = document.getElementById("appPin").value.trim();
+  const state = document.getElementById("appState").value.trim();
+
+  if(!name || !mobile || !house || !area || !city || !district || !pin || !state){
+    alert("Please fill all details.");
+    return;
+  }
+
+  const message =
+`Send Me An Address This Format.
+
+1. Full Name = ${name}
+2. Mobile No. = ${mobile}
+3. House No. = ${house}
+4. Area Name = ${area}
+5. City = ${city}
+6. District = ${district}
+7. Pin Code No. = ${pin}
+8. State = ${state}`;
+
+  const whatsappNumber = "918000704863";
+  const whatsappURL =
+    "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
