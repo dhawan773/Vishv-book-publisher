@@ -97,3 +97,24 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
   color: #16a34a !important;
   font-weight: 800;
 }
+/* Apply Now button */
+.apply-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:0;
+  cursor:pointer;
+  background:#16a34a;
+  color:#fff;
+  padding:11px 18px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:800;
+  font-family:inherit;
+  transition:.2s;
+}
+
+.apply-btn:hover{
+  opacity:.9;
+  transform:translateY(-1px);
+}
