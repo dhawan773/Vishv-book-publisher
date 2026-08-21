@@ -25,3 +25,16 @@ function showStrikeStatus(){
     "This is a website status display only."
   );
 }
+function toggleStatus(){
+  const badge = document.getElementById("statusBadge");
+
+  if (badge.textContent.trim() === "Strike Off") {
+    badge.textContent = "Active";
+    badge.classList.remove("danger");
+    badge.classList.add("active-status");
+  } else {
+    badge.textContent = "Strike Off";
+    badge.classList.remove("active-status");
+    badge.classList.add("danger");
+  }
+}
