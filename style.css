@@ -84,3 +84,12 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
     padding:11px 8px;
   }
 }
+#statusBadge{
+  cursor:pointer;
+}
+
+#statusBadge.active-status{
+  background:#166534;
+  border-color:#22c55e;
+  color:#dcfce7;
+}
