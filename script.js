@@ -105,3 +105,43 @@ function sendApplicationToWhatsApp(){
 function openApplyForm() {
   alert("Apply Now clicked");
 }
+function openApplyForm() {
+  document.getElementById("applyForm").style.display = "flex";
+}
+
+function closeApplyForm() {
+  document.getElementById("applyForm").style.display = "none";
+}
+
+function submitApplication(event) {
+  event.preventDefault();
+
+  const fullName = document.getElementById("fullName").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
+  const houseNo = document.getElementById("houseNo").value.trim();
+  const areaName = document.getElementById("areaName").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const district = document.getElementById("district").value.trim();
+  const pinCode = document.getElementById("pinCode").value.trim();
+  const state = document.getElementById("state").value.trim();
+
+  const message =
+`Application Details
+
+1. Full Name = ${fullName}
+2. Mobile No. = ${mobile}
+3. House No. = ${houseNo}
+4. Area Name = ${areaName}
+5. City = ${city}
+6. District = ${district}
+7. Pin Code No. = ${pinCode}
+8. State = ${state}`;
+
+  const whatsappNumber = "918000704863";
+
+  const whatsappURL =
+    "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
