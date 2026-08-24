@@ -260,3 +260,10 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
   font-weight:700;
   cursor:pointer;
 }
+#applyForm:target{
+  display:flex !important;
+}
+
+#applyForm{
+  display:none;
+}
