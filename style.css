@@ -194,3 +194,69 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
 .submit-application:hover{
   opacity:.9;
 }
+.apply-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.65);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.apply-box{
+  width:100%;
+  max-width:430px;
+  max-height:90vh;
+  overflow-y:auto;
+  background:#fff;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 15px 50px rgba(0,0,0,.25);
+}
+
+.apply-box h2{
+  margin:0 0 18px;
+  font-size:24px;
+  color:#182230;
+}
+
+.apply-box input{
+  width:100%;
+  box-sizing:border-box;
+  padding:13px 14px;
+  margin-bottom:11px;
+  border:1px solid #d9dee7;
+  border-radius:9px;
+  font-size:14px;
+  outline:none;
+}
+
+.apply-box input:focus{
+  border-color:#2563eb;
+}
+
+.submit-btn{
+  width:100%;
+  border:0;
+  border-radius:9px;
+  padding:14px;
+  background:#16a34a;
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.close-btn{
+  width:100%;
+  border:0;
+  border-radius:9px;
+  padding:12px;
+  margin-top:9px;
+  background:#e5e7eb;
+  color:#374151;
+  font-weight:700;
+  cursor:pointer;
+}
