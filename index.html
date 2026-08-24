@@ -241,9 +241,39 @@
     <button class="submit-application" onclick="sendApplicationToWhatsApp()">
       Submit & Send on WhatsApp
     </button>
+</div>
+</div>
+
+<div id="applyForm" class="apply-overlay">
+  <div class="apply-box">
+
+    <h2>Apply Now ✅</h2>
+
+    <form onsubmit="submitApplication(event)">
+
+      <input id="fullName" type="text" placeholder="Full Name" required>
+      <input id="mobile" type="tel" placeholder="Mobile No." required>
+      <input id="houseNo" type="text" placeholder="House No." required>
+      <input id="areaName" type="text" placeholder="Area Name" required>
+      <input id="city" type="text" placeholder="City" required>
+      <input id="district" type="text" placeholder="District" required>
+      <input id="pinCode" type="text" placeholder="Pin Code No." required>
+      <input id="state" type="text" placeholder="State" required>
+
+      <button type="submit" class="submit-btn">
+        Submit & Continue to WhatsApp
+      </button>
+
+      <button type="button" class="close-btn" onclick="closeApplyForm()">
+        Close
+      </button>
+
+    </form>
 
   </div>
 </div>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
+
