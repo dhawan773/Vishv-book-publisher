@@ -267,3 +267,24 @@ footer{background:#111827;color:#b6c0cf;padding:25px 0}.footer-inner{display:fle
 #applyForm{
   display:none;
 }
+.work-note {
+  border-left: 6px solid #16a34a;
+  background: #f0fdf4;
+}
+
+.work-note strong {
+  display: block;
+  color: #15803d;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.important-note span {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.important-note strong {
+  color: #15803d;
+  font-weight: 800;
+}
